@@ -1,5 +1,5 @@
 .PHONY: bench-all
-bench:
+bench-all:
 	go test -bench=. ./src
 
 .PHONY: static-vs-oo
