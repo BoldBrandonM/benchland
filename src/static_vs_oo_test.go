@@ -1,4 +1,4 @@
-package benchland_test
+package src_test
 
 import (
 	"testing"
