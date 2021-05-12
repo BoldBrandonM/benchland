@@ -27,14 +27,14 @@ func (f *fibber) OOFib(n int) int {
 	return f.OOFib(n-1) + f.OOFib(n-2)
 }
 
-func BenchmarkStaticFib100(b *testing.B) {
+func BenchmarkStaticFib25(b *testing.B) {
 	// run the static fib function b.N times
 	for n := 0; n < b.N; n++ {
 		staticFib(25)
 	}
 }
 
-func BenchmarkOOFib100(b *testing.B) {
+func BenchmarkOOFib25(b *testing.B) {
 	// run the OO fib function b.N times
 	for n := 0; n < b.N; n++ {
 		f := NewFibber()
